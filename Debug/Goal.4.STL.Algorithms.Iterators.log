@@ -1,0 +1,7 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (Goal.4.STL.Algorithms.Iterators.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Monster.cpp
+  Player.cpp
+  goal.5.cpp
+  Generating Code...
+D:\Desktop\Goal.4.STL.Algorithms.Iterators\goal.5.cpp(142,35): warning C4018: '<=': signed/unsigned mismatch
+  Goal.4.STL.Algorithms.Iterators.vcxproj -> D:\Desktop\Goal.4.STL.Algorithms.Iterators\Debug\Goal.4-5.Inheritance.Operator.Overloading.exe
