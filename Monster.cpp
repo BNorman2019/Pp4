@@ -52,7 +52,7 @@ Monster::Monster(const Player & player)
 
 void Monster::print() const
 {
-	printName();
+	std::cout << *this;
 	std::cout << " h:" << health << std::endl;
 }
 
@@ -61,7 +61,7 @@ int Monster::damage() const
 	int potentialDamage{ strength };
 	std::normal_distribution<double> damageDealt(potentialDamage, 2.0);
 
-	printName();
+	std::cout << *this;
 	std::cout << " deals ";
 	return std::max(1, (int)damageDealt(engine));
 }
@@ -71,7 +71,7 @@ void Monster::defense(int damage)
 	std::normal_distribution<double> defense(AC, 1.0 / level);
 	damage = std::max(0, damage - (int)defense(engine));
 	std::cout << damage << " damage to ";
-	printName();
+	std::cout << *this;
 	std::cout << "!!!" << std::endl;
 	health -= damage;
 }

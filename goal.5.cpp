@@ -122,13 +122,13 @@ void monsterAttack(Player& player, const std::vector<Monster>& monsters)
 			std::bernoulli_distribution willAttack(.75);
 			if (willAttack(Object::engine))
 			{
-				monster.printName();
+				monster.print();
 				std::cout << " attacks!" << std::endl;
 				player.defense(monster.damage());
 			}
 			else
 			{
-				monster.printName();
+				monster.print();
 				std::cout << " twiddles its thumbs" << std::endl;
 			}
 		});
@@ -155,7 +155,7 @@ void bringOutYourDead(std::vector<Monster>& monsters)
 			{
 				if (monster.isDead())
 				{
-					monster.printName();
+					std::cout << monster;
 					std::cout << " has died!!!" << std::endl << std::endl;
 					return true;
 				}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Goal.4-5.Inheritance.Operator.Overloading", "Goal.4.STL.Algorithms.Iterators.vcxproj", "{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Debug|x64.ActiveCfg = Debug|x64
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Debug|x64.Build.0 = Debug|x64
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Debug|x86.ActiveCfg = Debug|Win32
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Debug|x86.Build.0 = Debug|Win32
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Release|x64.ActiveCfg = Release|x64
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Release|x64.Build.0 = Release|x64
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Release|x86.ActiveCfg = Release|Win32
+		{E31F578B-4C1C-4147-84DC-BBDBB8A74C6A}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8A82D7E-29B5-478C-8DC0-F642F24BBA09}
+	EndGlobalSection
+EndGlobal

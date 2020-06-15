@@ -3,6 +3,7 @@
 
 #include <map>
 #include <random>
+#include <iostream>
 
 
 class Object
@@ -17,6 +18,8 @@ public:
 	
 	void printName() const;
 	bool isDead();
+
+	friend std::ostream& operator<<(std::ostream& output, const Object& thing);
 
 
 protected:

@@ -15,7 +15,7 @@ int Item::getBonusValue() const
 	return bonusValue;
 }
 
-void Item::printItem()
+/*void Item::printItem()
 {
 	switch (getClassification())
 	{
@@ -30,4 +30,40 @@ void Item::printItem()
 		break;
 	}
 	std::cout << "+" << getBonusValue();
+}*/
+
+std::ostream& operator<<(std::ostream& output, const Item& thing)
+{
+	switch (thing.getClassification())
+	{
+	case Item::Type::armor:
+		output << "Armor";
+		break;
+	case Item::Type::shield:
+		output << "Shield";
+		break;
+	case Item::Type::sword:
+		output << "Sword";
+		break;
+	}
+	output << "+" << thing.getBonusValue();
+	return output;
+}
+
+bool operator<(const Item& thing1, const Item& thing2)
+{
+	if (thing1.getBonusValue() < thing2.getBonusValue())
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
+int& operator+=(Item& thing1, const Item& thing2)
+{
+	thing1.bonusValue += thing2.bonusValue;
+	return thing1.bonusValue;
 }

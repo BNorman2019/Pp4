@@ -8,7 +8,7 @@ Object::Object(Type name, int strength, int health, int level) : name{ name }, s
 {
 }
 
-void Object::printName() const
+/*void Object::printName() const
 {
 	std::cout << "L:" << level << " ";
 	switch (name)
@@ -29,11 +29,35 @@ void Object::printName() const
 		std::cout << "Dragon";
 		break;
 	}
-}
+}*/
 
 bool Object::isDead()
 {
 	return health <= 0;
+}
+
+std::ostream& operator<<(std::ostream& output, const Object& thing)
+{
+	output << "Level: " << thing.level << " ";
+	switch (thing.name)
+	{
+	case Object::Type::player:
+		output << "Player";
+		break;
+	case Object::Type::slime:
+		output << "Slime";
+		break;
+	case Object::Type::orc:
+		output << "Orc";
+		break;
+	case Object::Type::sprite:
+		output << "Sprite";
+		break;
+	case Object::Type::dragon:
+		output << "Dragon";
+		break;
+	}
+	return output;
 }
 
 
